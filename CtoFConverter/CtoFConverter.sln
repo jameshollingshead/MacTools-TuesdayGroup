@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtoFConverter", "CtoFConverter\CtoFConverter.csproj", "{CECD850C-739D-4F82-891F-3B893A872B42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtoFConverterTests", "CtoFConverterTests\CtoFConverterTests.csproj", "{C62607EF-42E6-4468-A243-979B87F53ED9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CECD850C-739D-4F82-891F-3B893A872B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CECD850C-739D-4F82-891F-3B893A872B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CECD850C-739D-4F82-891F-3B893A872B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CECD850C-739D-4F82-891F-3B893A872B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62607EF-42E6-4468-A243-979B87F53ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62607EF-42E6-4468-A243-979B87F53ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62607EF-42E6-4468-A243-979B87F53ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62607EF-42E6-4468-A243-979B87F53ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
