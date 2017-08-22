@@ -21,6 +21,29 @@ namespace ShoppingCartKataTests.InventoryItems
             detergent = new Detergent();
         }
 
-        
+        [Test]
+        public void GetNameReturnDetergent()
+        {
+            Assert.AreEqual("detergent", detergent.GetName());
+        }
+
+        [Test]
+        public void GetPriceReturnThree()
+        {
+            Assert.AreEqual(3, detergent.GetPrice(), delta);
+        }
+
+        [Test]
+        public void GetNumberForDiscountReturn1()
+        {
+            Assert.AreEqual(1, detergent.GetNumberForDiscount());
+        }
+
+        [Test]
+        public void GetDiscountPriceReturn3()
+        {
+            Assert.AreEqual(3, detergent.GetDiscountPrice(), delta);
+        }
+
     }
 }

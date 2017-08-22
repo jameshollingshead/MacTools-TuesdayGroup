@@ -8,25 +8,29 @@ namespace ShoppingCartKata.InventoryItems
 {
     public class Chips : IInventory
     {
+        private string _name = "chips";
+        private double _price = 0.75;
+        private int _numberForDiscount = 1;
+        private double _discountPrice = 0.75;
 
         public string GetName()
         {
-            throw new NotImplementedException();
+            return _name;
         }
 
         public double GetPrice()
         {
-            throw new NotImplementedException();
+            return _price;
         }
 
         public int GetNumberForDiscount()
         {
-            throw new NotImplementedException();
+            return _numberForDiscount;
         }
 
         public double GetDiscountPrice()
         {
-            throw new NotImplementedException();
+            return _discountPrice;
         }
     }
 }
