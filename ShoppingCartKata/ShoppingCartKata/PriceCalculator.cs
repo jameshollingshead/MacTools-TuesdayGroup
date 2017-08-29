@@ -19,7 +19,7 @@ namespace ShoppingCartKata
 
         public double GetDiscountedTotal(IInventory item, int discountedNumber)
         {
-            throw new NotImplementedException();
+            return item.GetDiscountPrice() * discountedNumber;
         }
     }
 }

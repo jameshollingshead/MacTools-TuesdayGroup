@@ -34,6 +34,17 @@ namespace ShoppingCartKataTests
             Assert.AreEqual(1.00, priceCalculator.GetNonDiscountedTotal(new Apple(), 2), delta);
         }
 
+        [Test]
+        public void OneAppleDiscountedPriceReturns120()
+        {
+            Assert.AreEqual(1.20, priceCalculator.GetDiscountedTotal(new Apple(), 1), delta);
+        }
+
+        [Test]
+        public void TwoApplesDiscountedPriceReturns240()
+        {
+            Assert.AreEqual(2.40, priceCalculator.GetDiscountedTotal(new Apple(), 2), delta);
+        }
     
     }
 }
