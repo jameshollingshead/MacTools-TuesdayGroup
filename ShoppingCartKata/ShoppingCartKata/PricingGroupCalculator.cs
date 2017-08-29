@@ -7,12 +7,26 @@ namespace ShoppingCartKata
     {
         public int GetNumberAtRegularPrice(IInventory item, int numberOfItemInCart)
         {
-            throw new NotImplementedException();
+            int result;
+
+            if (numberOfItemInCart < 0)
+                result = 0;
+            else
+                result = numberOfItemInCart % item.GetNumberForDiscount();
+
+            return result;
         }
 
         public int GetNumberAtDiscountPrice(IInventory item, int numberOfItemInCart)
         {
-            throw new NotImplementedException();
+            int result;
+
+            if (numberOfItemInCart < 0)
+                result = 0;
+            else
+                result = numberOfItemInCart / item.GetNumberForDiscount();
+
+            return result;
         }
     }
 }

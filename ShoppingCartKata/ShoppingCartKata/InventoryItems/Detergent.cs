@@ -9,25 +9,30 @@ namespace ShoppingCartKata.InventoryItems
 {
     public class Detergent : IInventory
     {
-        
+
+        private string _name = "detergent";
+        private double _price = 3;
+        private int _numberForDiscount = 1;
+        private double _discountPrice = 3;
+
         public string GetName()
         {
-            return "detergent";
+            return _name;
         }
 
         public double GetPrice()
         {
-            return 3;
+            return _price;
         }
 
         public int GetNumberForDiscount()
         {
-            return 1;
+            return _numberForDiscount;
         }
 
         public double GetDiscountPrice()
         {
-            return 3;
+            return _discountPrice;
         }
     }
 }
