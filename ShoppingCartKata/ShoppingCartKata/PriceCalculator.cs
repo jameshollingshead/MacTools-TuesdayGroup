@@ -9,7 +9,10 @@ namespace ShoppingCartKata
 
         public double GetItemTotal(IInventory item, int numberOfItemInCart)
         {
-            throw new NotImplementedException();
+            var nonDiscountedTotal = GetNonDiscountedTotal(item, _pricingGroupCalculator.GetNumberAtRegularPrice(item, numberOfItemInCart));
+            var discountedTotal = GetDiscountedTotal(item, _pricingGroupCalculator.GetNumberAtDiscountPrice(item, numberOfItemInCart));
+
+            return nonDiscountedTotal + discountedTotal;
         }
 
         public double GetNonDiscountedTotal(IInventory item, int nonDiscountedNumber)
