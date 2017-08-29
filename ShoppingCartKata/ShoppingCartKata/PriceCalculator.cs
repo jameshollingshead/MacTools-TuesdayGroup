@@ -14,7 +14,7 @@ namespace ShoppingCartKata
 
         public double GetNonDiscountedTotal(IInventory item, int nonDiscountedNumber)
         {
-            throw new NotImplementedException();
+            return item.GetPrice() * nonDiscountedNumber;
         }
 
         public double GetDiscountedTotal(IInventory item, int discountedNumber)
